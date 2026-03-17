@@ -5,17 +5,289 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Odin Admin Dashboard</title>
     <meta name="description" content="An admin dashboard. That's all." />
-    <link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
+    <script src="js/script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="css/styles.css"
+      type="text/css"
+      media="screen"
+    />
   </head>
 
   <body>
     <div class="container">
-      <div class="header">header</div>
-      <div class="sidebar">
-        <div class="test">test</div>
-        <div class="test">test</div>
+      <div class="header">
+        <div class="header-top-section">
+          <search>
+            <form action="./">
+              <label for="search"
+                ><img src="assets/magnify.svg" alt="magnify icon" />
+              </label>
+              <input type="search" name="search" id="search" value="" />
+            </form>
+          </search>
+          <div class="profile">
+            <div class="bell">
+              <img src="assets/bell-outline.svg" alt="notification bell" />
+            </div>
+            <div class="profile-details">
+              <div class="profile-pic">
+                <img src="assets/pics/Amaya.png" alt="" />
+              </div>
+              <div class="user-fullname">Amaya</div>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom-section">
+          <div class="greeting">
+            <h5>Hi there,</h5>
+            <div class="user">Amaya (@amaya)</div>
+          </div>
+          <div class="action-buttons">
+            <button class="action-button">New</button>
+            <button class="action-button">Upload</button>
+            <button class="action-button">Share</button>
+          </div>
+        </div>
       </div>
-      <div class="main-content">main</div>
+      <div class="sidebar">
+        <div class="dashboard">
+          <div class="dashboard-icon"></div>
+          <div class="dashboard-title">
+            <img src="assets/view-dashboard.svg" alt="dashboard icon" />
+            <h2>Dashboard</h2>
+          </div>
+        </div>
+
+        <div class="user-options">
+          <div class="pages">
+            <ul class="pages-list">
+              <li>
+                <img src="assets/home.svg" alt="home icon" />
+                <h3>Home</h3>
+              </li>
+              <li>
+                <img
+                  src="assets/card-account-details-outline.svg"
+                  alt="id icon"
+                />
+                <h3>Profile</h3>
+              </li>
+              <li>
+                <img src="assets/message-reply.svg" alt="message icon" />
+                <h3>Messages</h3>
+              </li>
+              <li>
+                <img src="assets/clock.svg" alt="clock icon" />
+
+                <h3>History</h3>
+              </li>
+              <li>
+                <img src="assets/note-multiple.svg" alt="multiple notes icon" />
+                <h3>Tasks</h3>
+              </li>
+              <li>
+                <img src="assets/account-group.svg" alt="account group icon" />
+                <h3>Communities</h3>
+              </li>
+            </ul>
+          </div>
+
+          <div class="account-settings">
+            <ul class="account-settings-list">
+              <li>
+                <img src="assets/cog.svg" alt="cog icon" />
+                <h3>Settings</h3>
+              </li>
+              <li>
+                <img src="assets/help-box.svg" alt="help box icon" />
+                <h3>Support</h3>
+              </li>
+              <li>
+                <img src="assets/shield-check.svg" alt="shield check icon" />
+                <h3>Privacy</h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="projects-cards">
+          <h3>Projects</h3>
+          <div class="project-cards-container">
+            <div class="card">
+              <div class="card-details">
+                <div class="card-title">title</div>
+                <div class="card-description">description</div>
+              </div>
+              <div class="card-buttons">
+                <button class="card-button">
+                  <img
+                    src="assets/star-plus-outline.svg"
+                    alt="star plus icon"
+                  />
+                </button>
+                <button class="card-button">
+                  <img src="assets/eye-plus-outline.svg" alt="eye plus icon" />
+                </button>
+                <button class="card-button">
+                  <img src="assets/source-fork.svg" alt="source fork icon" />
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">title</div>
+              <div class="card-description">description</div>
+              <div class="card-buttons">
+                <button class="card-button">
+                  <img
+                    src="assets/star-plus-outline.svg"
+                    alt="star plus icon"
+                  />
+                </button>
+                <button class="card-button">
+                  <img src="assets/eye-plus-outline.svg" alt="eye plus icon" />
+                </button>
+                <button class="card-button">
+                  <img src="assets/source-fork.svg" alt="source fork icon" />
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">title</div>
+              <div class="card-description">description</div>
+              <div class="card-buttons">
+                <button class="card-button">
+                  <img
+                    src="assets/star-plus-outline.svg"
+                    alt="star plus icon"
+                  />
+                </button>
+                <button class="card-button">
+                  <img src="assets/eye-plus-outline.svg" alt="eye plus icon" />
+                </button>
+                <button class="card-button">
+                  <img src="assets/source-fork.svg" alt="source fork icon" />
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">title</div>
+              <div class="card-description">description</div>
+              <div class="card-buttons">
+                <button class="card-button">
+                  <img
+                    src="assets/star-plus-outline.svg"
+                    alt="star plus icon"
+                  />
+                </button>
+                <button class="card-button">
+                  <img src="assets/eye-plus-outline.svg" alt="eye plus icon" />
+                </button>
+                <button class="card-button">
+                  <img src="assets/source-fork.svg" alt="source fork icon" />
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">title</div>
+              <div class="card-description">description</div>
+              <div class="card-buttons">
+                <button class="card-button">
+                  <img
+                    src="assets/star-plus-outline.svg"
+                    alt="star plus icon"
+                  />
+                </button>
+                <button class="card-button">
+                  <img src="assets/eye-plus-outline.svg" alt="eye plus icon" />
+                </button>
+                <button class="card-button">
+                  <img src="assets/source-fork.svg" alt="source fork icon" />
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">title</div>
+              <div class="card-description">description</div>
+              <div class="card-buttons">
+                <button class="card-button">
+                  <img
+                    src="assets/star-plus-outline.svg"
+                    alt="star plus icon"
+                  />
+                </button>
+                <button class="card-button">
+                  <img src="assets/eye-plus-outline.svg" alt="eye plus icon" />
+                </button>
+                <button class="card-button">
+                  <img src="assets/source-fork.svg" alt="source fork icon" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="information-cards">
+          <div class="announcements">
+            <h3>Announcements</h3>
+            <div class="announcement-card">
+              <div class="announcement-entry">
+                <h4>announcement title</h4>
+                <p>lorem ipsum</p>
+              </div>
+              <div class="announcement-entry">
+                <h4>announcement title</h4>
+                <p>lorem ipsum</p>
+              </div>
+              <div class="announcement-entry">
+                <h4>announcement title</h4>
+                <p>lorem ipsum</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="trending">
+            <h3>Trending</h3>
+            <div class="trending-entry">
+              <div class="trending-user-profile-pic">
+                <img src="assets/pics/Brian.png" alt="user profile pic" />
+              </div>
+              <div class="trending-entry-details">
+                <div class="trendig-username">test</div>
+                <div class="trending-project">test</div>
+              </div>
+            </div>
+            <div class="trending-entry">
+              <div class="trending-user-profile-pic">
+                <img src="assets/pics/Jessica.png" alt="user profile pic" />
+              </div>
+              <div class="trending-entry-details">
+                <div class="trendig-username">test</div>
+                <div class="trending-project">test</div>
+              </div>
+            </div>
+            <div class="trending-entry">
+              <div class="trending-user-profile-pic">
+                <img src="assets/pics/Mackenzie.png" alt="user profile pic" />
+              </div>
+              <div class="trending-entry-details">
+                <div class="trendig-username">test</div>
+                <div class="trending-project">test</div>
+              </div>
+            </div>
+            <div class="trending-entry">
+              <div class="trending-user-profile-pic">
+                <img src="assets/pics/Amaya.png" alt="user profile pic" />
+              </div>
+              <div class="trending-entry-details">
+                <div class="trendig-username">test</div>
+                <div class="trending-project">test</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

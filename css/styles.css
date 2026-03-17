@@ -1,0 +1,247 @@
+:root {
+  /* --- Backgrounds & Layout --- */
+  --bg-main: #1a1b26; /* Main dashboard background behind the cards */
+  --bg-sidebar: #16161e; /* Sidebar background (left column) */
+  --bg-header: #1a1b26; /* Top header area (matching main bg) */
+  --bg-card: #24283b; /* Project cards, Announcements, and Trending areas */
+
+  /* --- Text Colors --- */
+  --text-primary: #c0caf5; /* Headings, titles, sidebar links, and main text */
+  --text-secondary: #9aa5ce; /* Paragraphs, @usernames, and secondary info */
+  --text-muted: #565f89; /* Disabled text or very subtle details */
+
+  /* --- Search Bar --- */
+  --bg-search: #292e42; /* Search input background (pill shape) */
+  --text-search: #c0caf5; /* Color of the text when the user types */
+  --placeholder-search: #565f89; /* "Search..." text and magnifying glass icon */
+
+  /* --- Buttons ("New", "Upload", "Share") --- */
+  --btn-bg: #7aa2f7; /* Button background color */
+  --btn-text: #15161e; /* Button text color (dark for high contrast) */
+  --btn-hover-bg: #3d59a1; /* Button background on hover */
+  --btn-hover-text: #c0caf5; /* Button text on hover */
+
+  /* --- Card Accents & Icons --- */
+  --card-side-border: #e0af68; /* The yellow/orange stripe on the left of project cards */
+  --card-icon: #7dcfff; /* The star, eye, and branch icons at the bottom of cards */
+  --accent-primary: #7aa2f7; /* For general active states or focus rings */
+
+  /* --- Borders & Shadows --- */
+  --border-color: #414868; /* Dividers (like the lines between Announcements) */
+  --shadow-color: rgba(0, 0, 0, 0.4); /* Shadows for cards to give them depth */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  gap: 1rem;
+}
+
+.header {
+  grid-area: 1 / 2 / 2 / 3;
+  border: 1px solid red;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.header-top-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+
+  form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      width: 1.75rem;
+      height: auto;
+    }
+  }
+
+  input {
+    border-radius: 15px;
+    border: none;
+    background-color: var(--bg-search);
+    color: var(--text-search);
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+
+.bell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  img {
+    width: 1.75rem;
+    height: auto;
+  }
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  img {
+    width: 3rem;
+    height: auto;
+  }
+  .user-fullname {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+}
+
+.header-bottom-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.action-button {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--btn-hover-bg);
+  color: var(--btn-text);
+}
+
+.action-button:hover {
+  background-color: var(--btn-hover-bg);
+  color: var(--btn-hover-text);
+}
+
+.sidebar {
+  grid-area: 1 / 1 / 3 / 2;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-auto-flow: row;
+  border: 1px solid red;
+}
+
+.dashboard-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  img {
+    width: 3rem;
+    height: auto;
+  }
+}
+
+.user-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  img {
+    width: 1.75rem;
+    height: auto;
+  }
+}
+
+.main-content {
+  grid-area: 2 / 2 / 3 / 3;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+}
+
+.project-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .card-buttons {
+    display: flex;
+    align-items: center;
+
+    justify-content: end;
+  }
+
+  button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+  img {
+    width: 1.75rem;
+    height: auto;
+  }
+}
+
+.information-cards {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
