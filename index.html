@@ -27,7 +27,7 @@
             </form>
           </search>
           <div class="profile">
-            <div class="bell">
+            <div id="bell" class="bell unringed">
               <img src="assets/bell-outline.svg" alt="notification bell" />
             </div>
             <div class="profile-details">
@@ -62,7 +62,7 @@
         <div class="user-options">
           <div class="pages">
             <ul class="pages-list">
-              <li>
+              <li class="active">
                 <img src="assets/home.svg" alt="home icon" />
                 <h3>Home</h3>
               </li>
@@ -118,8 +118,33 @@
           <div class="project-cards-container">
             <div class="card">
               <div class="card-details">
-                <div class="card-title">title</div>
-                <div class="card-description">description</div>
+                <div class="card-title">Gajillion dollar project</div>
+                <div class="card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  malesuada magna quis mi tempus, id viverra ante euismod. Nam
+                  scelerisque convallis metus eget euismod.
+                </div>
+              </div>
+              <div class="card-buttons">
+                <button class="card-button">
+                  <img
+                    src="assets/star-plus-outline.svg"
+                    alt="star plus icon"
+                  />
+                </button>
+                <button class="card-button">
+                  <img src="assets/eye-plus-outline.svg" alt="eye plus icon" />
+                </button>
+                <button class="card-button">
+                  <img src="assets/source-fork.svg" alt="source fork icon" />
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-details">
+                <div class="card-title">It's not a phase mom</div>
+                <div class="card-description">Aenean in tincidunt risus</div>
               </div>
               <div class="card-buttons">
                 <button class="card-button">
@@ -137,8 +162,23 @@
               </div>
             </div>
             <div class="card">
-              <div class="card-title">title</div>
-              <div class="card-description">description</div>
+              <div class="card-details">
+                <div class="card-title">Chill project</div>
+                <div class="card-description">
+                  Duis tempor elit at finibus luctus. Pellentesque egestas quam
+                  non metus semper sollicitudin. Curabitur sagittis ex lacinia
+                  hendrerit consequat. Integer accumsan nisl id eros luctus
+                  elementum. Mauris felis justo, auctor vitae nisl sit amet,
+                  pulvinar suscipit nisl. Proin non ipsum eu mauris blandit
+                  iaculis quis at ex. Aliquam a tincidunt enim. Mauris nunc
+                  felis, auctor condimentum risus et, lobortis lacinia nisi.
+                  Donec tempor aliquam arcu sit amet imperdiet. Vestibulum sit
+                  amet elit id nisi malesuada consectetur quis porttitor purus.
+                  Nulla nisl enim, imperdiet in nulla sit amet, placerat
+                  suscipit ligula. Duis porta eros sed dui bibendum condimentum.
+                  Duis posuere congue magna.
+                </div>
+              </div>
               <div class="card-buttons">
                 <button class="card-button">
                   <img
@@ -155,8 +195,13 @@
               </div>
             </div>
             <div class="card">
-              <div class="card-title">title</div>
-              <div class="card-description">description</div>
+              <div class="card-details">
+                <div class="card-title">The app that will save my life</div>
+                <div class="card-description">
+                  Donec feugiat rutrum purus id auctor. Vivamus tempor non felis
+                  ut semper.
+                </div>
+              </div>
               <div class="card-buttons">
                 <button class="card-button">
                   <img
@@ -173,8 +218,13 @@
               </div>
             </div>
             <div class="card">
-              <div class="card-title">title</div>
-              <div class="card-description">description</div>
+              <div class="card-details">
+                <div class="card-title">One app to save my life</div>
+                <div class="card-description">
+                  Donec pretium maximus ligula rutrum vehicula. Mauris a nisl
+                  rutrum, vehicula dolor sit amet, ultricies nunc.
+                </div>
+              </div>
               <div class="card-buttons">
                 <button class="card-button">
                   <img
@@ -191,26 +241,15 @@
               </div>
             </div>
             <div class="card">
-              <div class="card-title">title</div>
-              <div class="card-description">description</div>
-              <div class="card-buttons">
-                <button class="card-button">
-                  <img
-                    src="assets/star-plus-outline.svg"
-                    alt="star plus icon"
-                  />
-                </button>
-                <button class="card-button">
-                  <img src="assets/eye-plus-outline.svg" alt="eye plus icon" />
-                </button>
-                <button class="card-button">
-                  <img src="assets/source-fork.svg" alt="source fork icon" />
-                </button>
+              <div class="card-details">
+                <div class="card-title">Bajillion dollar project</div>
+                <div class="card-description">
+                  Aliquam et mi egestas tellus convallis blandit sit amet id
+                  orci. Curabitur elementum, purus quis semper posuere, mi metus
+                  placerat ligula, sed ornare sapien orci vitae quam. Aenean
+                  sagittis dui quis ultricies varius.
+                </div>
               </div>
-            </div>
-            <div class="card">
-              <div class="card-title">title</div>
-              <div class="card-description">description</div>
               <div class="card-buttons">
                 <button class="card-button">
                   <img
@@ -233,56 +272,66 @@
             <h3>Announcements</h3>
             <div class="announcement-card">
               <div class="announcement-entry">
-                <h4>announcement title</h4>
-                <p>lorem ipsum</p>
+                <h4>Production was down for 1 day</h4>
+                <p>
+                  In congue, mauris ac viverra tincidunt, mauris erat mollis
+                  erat, et fringilla enim arcu quis est.
+                </p>
+                <hr />
               </div>
               <div class="announcement-entry">
-                <h4>announcement title</h4>
-                <p>lorem ipsum</p>
+                <h4>Rave party on premises</h4>
+                <p>Vivamus eros urna.</p>
+                <hr />
               </div>
               <div class="announcement-entry">
-                <h4>announcement title</h4>
-                <p>lorem ipsum</p>
+                <h4>Community livestream</h4>
+                <p>
+                  Sed arcu nisi, auctor a efficitur et, faucibus in nibh. Aenean
+                  efficitur hendrerit leo eu ultricies.
+                </p>
               </div>
             </div>
           </div>
 
           <div class="trending">
             <h3>Trending</h3>
-            <div class="trending-entry">
-              <div class="trending-user-profile-pic">
-                <img src="assets/pics/Brian.png" alt="user profile pic" />
+            <div class="trending-card">
+              <div class="trending-entry">
+                <div class="trending-user-profile-pic">
+                  <img src="assets/pics/Brian.png" alt="user profile pic" />
+                </div>
+                <div class="trending-entry-details">
+                  <div class="trending-username">@brian</div>
+                  <div class="trending-project">Gajillion dollar project</div>
+                </div>
               </div>
-              <div class="trending-entry-details">
-                <div class="trendig-username">test</div>
-                <div class="trending-project">test</div>
+              <div class="trending-entry">
+                <div class="trending-user-profile-pic">
+                  <img src="assets/pics/Jessica.png" alt="user profile pic" />
+                </div>
+                <div class="trending-entry-details">
+                  <div class="trending-username">@jessica</div>
+                  <div class="trending-project">Chill project</div>
+                </div>
               </div>
-            </div>
-            <div class="trending-entry">
-              <div class="trending-user-profile-pic">
-                <img src="assets/pics/Jessica.png" alt="user profile pic" />
+              <div class="trending-entry">
+                <div class="trending-user-profile-pic">
+                  <img src="assets/pics/Mackenzie.png" alt="user profile pic" />
+                </div>
+                <div class="trending-entry-details">
+                  <div class="trending-username">@mackenzie</div>
+                  <div class="trending-project">App to save company's life</div>
+                </div>
               </div>
-              <div class="trending-entry-details">
-                <div class="trendig-username">test</div>
-                <div class="trending-project">test</div>
-              </div>
-            </div>
-            <div class="trending-entry">
-              <div class="trending-user-profile-pic">
-                <img src="assets/pics/Mackenzie.png" alt="user profile pic" />
-              </div>
-              <div class="trending-entry-details">
-                <div class="trendig-username">test</div>
-                <div class="trending-project">test</div>
-              </div>
-            </div>
-            <div class="trending-entry">
-              <div class="trending-user-profile-pic">
-                <img src="assets/pics/Amaya.png" alt="user profile pic" />
-              </div>
-              <div class="trending-entry-details">
-                <div class="trendig-username">test</div>
-                <div class="trending-project">test</div>
+              <div class="trending-entry">
+                <div class="trending-user-profile-pic">
+                  <img src="assets/pics/Amaya.png" alt="user profile pic" />
+                </div>
+                <div class="trending-entry-details">
+                  <div class="trending-username">@amaya</div>
+                  <div class="trending-project">I'm just vibing here</div>
+                </div>
               </div>
             </div>
           </div>
